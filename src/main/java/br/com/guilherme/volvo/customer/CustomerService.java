@@ -56,7 +56,6 @@ public class CustomerService {
         CustomerEntity entity = new CustomerEntity();
         BeanUtils.copyProperties(customer, entity);
         entity.setId(id);
-        entity.setRegistrationDate(LocalDate.now());
         entity.setLastUpdate(LocalDate.now());
         List<AddressEntity> addressEntities = new ArrayList<>();
 
